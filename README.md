@@ -1,4 +1,5 @@
 # MyGitProject
 
 Jared Armstrong 100145572
-code description to be added and contribution
+created change.py 
+it gets the value from another file and converts it into the lowest amount fo change possible
