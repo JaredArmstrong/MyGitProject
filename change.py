@@ -16,5 +16,15 @@ denominations = {
     }
 
 #create a empty dictionary to store the amounts of change
+change_count = {}
 
+# change user input into to cents
+amount_in_cents = int(amount * 100)
 
+# go through the denominations and calculate the count for each
+for denom, denom_name in denominations.items():
+count, amount_in_cents = divmod(amount_in_cents, denom)
+if count > 0:
+change_count[denom_name] = count
+
+return change_count
